@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import '../style.css';
-import Apartment from '../Appartement/Appartement';
+import { useEffect, useState } from "react";
+import "../style.css";
+import Apartment from "../Appartement/Appartement";
 
 function ApartmentList() {
   const [appartements, setApartments] = useState([]);
@@ -8,10 +8,10 @@ function ApartmentList() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8080/api/properties') 
+    fetch("http://localhost:8080/api/properties")
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Erreur de récupération des données');
+          throw new Error("Erreur de récupération des données");
         }
         return response.json();
       })
@@ -20,7 +20,11 @@ function ApartmentList() {
         setLoading(false);
       })
       .catch((error) => {
-        setError(error.message);
+        if (error.message === "Failed to fetch") {
+          setError("Impossible de charger les appartements.");
+        } else {
+          setError(error.message);
+        }
         setLoading(false);
       });
   }, []);
@@ -43,4 +47,3 @@ function ApartmentList() {
 }
 
 export default ApartmentList;
-

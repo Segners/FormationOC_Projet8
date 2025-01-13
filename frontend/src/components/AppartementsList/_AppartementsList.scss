@@ -1,0 +1,40 @@
+.apartment__grid {
+  display: grid;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 55px 50px;
+  gap: 50px 60px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 20px;
+  }
+}
+
+.apartment__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  font-size: 18px;
+  color: #888;
+  height: 200px;
+}
+
+.apartment__error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffecec;
+  color: #d9534f;
+  font-size: 18px;
+  padding: 20px;
+  border: 1px solid #d43f3a;
+  border-radius: 5px;
+}
