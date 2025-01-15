@@ -1,0 +1,17 @@
+.rating {
+  display: flex;
+  gap: 14px;
+  font-size: 24px;
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+    gap: 5px;
+  }
+}
+
+.red-star {
+  color: #ff6060;
+}
+
+.gray-star {
+  color: #d3d3d3;
+}
