@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
 }
+.apartmentCollapse 
+{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
 
 .apartmentDetails {
   display: flex;

@@ -1,12 +1,8 @@
-import '../components/style.css'
-import AppartementDetails from '../components/AppartementDetails/AppartementDetails'
-
+import "../components/style.css";
+import AppartementDetails from "../components/AppartementDetails/AppartementDetails";
 
 function FicheLogement() {
-  return (
-    <AppartementDetails>
-    </AppartementDetails>
-  )
+  return <AppartementDetails />;
 }
 
-export default FicheLogement
+export default FicheLogement;

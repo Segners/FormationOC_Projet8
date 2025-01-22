@@ -5,23 +5,13 @@ function Carousel({ pictures, title }) {
   const [currentImgIndex, setImgIndex] = useState(0);
 
   const handleNext = () => {
-    setImgIndex((imgIndex) => {
-      if (imgIndex === pictures.length - 1) {
-        return 0;
-      } else {
-        return imgIndex + 1;
-      }
-    });
+    setImgIndex((imgIndex) => (imgIndex + 1) % pictures.length);
   };
 
   const handlePrevious = () => {
-    setImgIndex((imgIndex) => {
-      if (imgIndex === 0) {
-        return pictures.length - 1;
-      } else {
-        return imgIndex - 1;
-      }
-    });
+    setImgIndex(
+      (imgIndex) => (imgIndex - 1 + pictures.length) % pictures.length
+    );
   };
 
   return (

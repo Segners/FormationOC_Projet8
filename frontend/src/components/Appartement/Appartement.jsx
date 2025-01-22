@@ -1,9 +1,10 @@
 import "../style.css";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
+
 
 function Apartment({ apartment }) {
   return (
-    <Link className="apartment__card" to={"/logement/" + apartment.id}>
+    <Link className="apartment__card" to={`/logement/${apartment.id}`}>
       <img src={apartment.cover} alt={apartment.title} />
       <h3>{apartment.title}</h3>
     </Link>
