@@ -1,4 +1,4 @@
-import "../components/style.css";
+import "../components/Css/style.css";
 import Banner from "../components/Banner/Banner";
 import Collapse from "../components/Collapse/Collapse";
 import bgImage from "../assets/bg2.jpg";

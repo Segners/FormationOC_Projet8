@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import "../../components/style.css";
+import "../Css/style.css";
 import Carousel from "./Carousel/Carousel";
 import Collapse from "../Collapse/Collapse";
 import Host from "./Host/Host";

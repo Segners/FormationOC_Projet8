@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style.css';
+import "../Css/style.css";
 
   // Composant qui accepte une propriété `children` (le contenu à afficher à l'intérieur du Wrapper)
 function Wrapper({children}) {

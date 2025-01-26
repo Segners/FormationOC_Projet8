@@ -1,4 +1,4 @@
-import "../../style.css";
+import "../../Css/style.css";
 
 // Composant Tags qui reçoit un tableau de tags en props.
 function Tags({ tags }) { 

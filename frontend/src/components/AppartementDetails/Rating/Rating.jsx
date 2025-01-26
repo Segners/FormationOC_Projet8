@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style.css";
+import "../../Css/style.css";
 
 
 // Composant Rating qui reçoit une note en props

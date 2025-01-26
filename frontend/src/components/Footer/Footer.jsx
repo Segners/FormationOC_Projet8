@@ -1,5 +1,5 @@
 import React from "react";
-import "../style.css";
+import "../Css/style.css";
 import footerlogo from "../../assets/footerlogo.svg"; 
 
 

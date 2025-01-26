@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../style.css"; 
+import "../Css/style.css"; 
 import Appartement from "../Appartement/Appartement";
 
 // Composant qui affiche une liste d'appartements

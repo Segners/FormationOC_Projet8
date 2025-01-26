@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style.css";
+import "../../Css/style.css";
 
 // Composant Host recevant le nom complet et l'image de l'hôte en props
 function Host({ name, picture }) { 

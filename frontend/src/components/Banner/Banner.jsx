@@ -1,4 +1,4 @@
-import "../style.css"; 
+import "../Css/style.css"; 
 import React from "react"; 
 
 // Composant `Banner` qui prend des props pour configurer son affichage

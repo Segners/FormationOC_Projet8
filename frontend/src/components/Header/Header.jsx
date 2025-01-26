@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router";
-import "../style.css";
+import "../Css/style.css";
 import logo from "../../assets/logo.svg";
 
 // Composant fonctionnel pour l'affichage du header

@@ -1,6 +1,6 @@
 import Banner from "../components/Banner/Banner";
 import Apprtements from "../components/AppartementsList/AppartementsList";
-import "../components/style.css";
+import "../components/Css/style.css";
 import bgImage from "../assets/bg1.jpg";
 
 function Home() {

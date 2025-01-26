@@ -1,5 +1,5 @@
 import { useState } from "react"; 
-import "../style.css";
+import "../Css/style.css";
 import React from "react";
 
   // Composant Collapse avec titre et children en props
