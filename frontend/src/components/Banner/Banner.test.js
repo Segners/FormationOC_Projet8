@@ -10,7 +10,7 @@ describe("tests pour la bannière du site", () => {
   });
 
   it("Affiche un text passé en props", () => {
-    const customText = "Text de Test";
+    const customText = "Texte de Test";
     const { getAllByText } = render(
       <Banner showText={true} text={customText} />
     );
@@ -19,7 +19,7 @@ describe("tests pour la bannière du site", () => {
     expect(elements.length).toBeGreaterThan(0);
   });
 
-  it("Si showText est false, n'affiche pas le test", () => {
+  it("Si showText est false, n'affiche pas le texte", () => {
     const { queryByText } = render(<Banner showText={false} />);
     expect(queryByText("Chez vous, partout et ailleurs")).toBeNull();
   });

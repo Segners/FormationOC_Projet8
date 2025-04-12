@@ -3,7 +3,7 @@ import Collapse from "./Collapse";
 import React from "react";
 
 describe("Tests du composant collapse", () => {
-  test("Le composannt est fermé par défaut", () => {
+  test("Le composant est fermé par défaut", () => {
     render(<Collapse title="Test Title">This is content</Collapse>);
 
     expect(screen.getByText("This is content")).not.toHaveClass("open");

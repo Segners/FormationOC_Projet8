@@ -40,7 +40,7 @@ function AppartementList() {
         // Arrête le chargement même en cas d'erreur
         setLoading(false); 
       });
-  }, []); // Le tableau de dépendances vide assure que l'effet s'exécute une seule fois au montage
+  }, []); // Le tableau de dépendances vide assure que l'effet s'exécute une seule fois
 
   if (loading) {
     // Affiche un message de chargement tant que les données ne sont pas encore disponibles

@@ -2,7 +2,7 @@ import "../Css/style.css";
 import { Link } from "react-router-dom";
 
 
-function Apartment({ apartment }) {
+function Appartement({ apartment }) {
   return (
     <Link className="apartment__card" to={`/logement/${apartment.id}`}>
       <img src={apartment.cover} alt={apartment.title} />
@@ -11,4 +11,4 @@ function Apartment({ apartment }) {
   );
 }
 
-export default Apartment;
+export default Appartement;
